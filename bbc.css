@@ -15,7 +15,6 @@
     background: #ccc;
  /*   margin: 30px 50px; */
     line-height: 1.4;
-    margin: 0;
   }
   .btn {
     background: var(--dark);
@@ -31,19 +30,19 @@
   .wrapper {
     display: grid;
     grid-gap: 20px;
+    margin-right: 0;
   }
 
   /* Navigation */
 .main-nav ul {
     display: grid;
- /*   grid-gap: 20px; */
     padding: 0;
     list-style: none;
     top-margin: 0;
-    grid-template-columns: repeat(12, 1fr);
+    
+    grid-template-columns: repeat(14, 1fr);
   }
-  
-  .main-nav a {
+.main-nav a {
     background: black;
     display: block;
     text-decoration: none;
@@ -51,7 +50,7 @@
     text-align: center;
     color: white;
     font-size: 1.0rem;
-    box-shadow: var(--shadow);
+    
   }
   
   .main-nav a:hover {
@@ -67,3 +66,81 @@
       margin-top 0px;
       height: 1rem;
   }
+
+  /* Style the search box inside the navigation bar */
+  .main-nav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  
+
+
+
+.main-nav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+ /* margin-top: 4px;
+  margin-right: 16px; */
+  font-size: 17px;
+  
+}
+span  a:hover {
+    color: green;
+    border-bottom:  3px solid cornflowerblue;
+  }
+.welcome {
+    float: left;
+    font-size: 3rem;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+.date {
+    float: right;
+    font-size: 3rem;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'showcase showcase top-box-a'
+      'showcase showcase top-box-b'
+      'showcase showcase top-box-c'
+      'showcase showcase top-box-d';
+  }
+  
+  /* showcase */
+.showcase p{
+  font-size: 1.3 rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+  /* showcase */
+  .showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;   /* arrange thing within grid */
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+  }
+  .showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+  }
+  
+  .showcase p{
+    font-size: 1.3 rem;
+    margin-top: 0;
+    color: var(--light);
+  }
+  
