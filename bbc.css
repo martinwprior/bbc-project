@@ -2,37 +2,45 @@ body {
     margin: 0;
     padding: 0;
     font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
-}
-li{
-    list-style-type: none;
-    margin: 0 2.5vh;
-    font-size: 2vh;
-    
-}
-nav a {
-    text-decoration: none;
     color: white;
-    border-right: 1px solid grey;
-
-    padding-top: 7px;
-    padding-bottom: 19px;
-    padding-right: 30px;
-    width: 100%;
 }
-nav {
-    width 100vw;
-    background-color: black;
-    padding-top: 10px;
-}
-
 
 ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    /* this option place the elements in a row */
-    display: flex;
-   text-align: center;
+    overflow: hidden;
+    background-color: black;
+   
+ }   
+
+li {
+    float: left;
+    
 }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 40px 25px 40px;
+    margin-bottom: -24px;
+    text-decoration: none;
+    border-right: 1px solid white;
+}
+
+#logo {
+    margin-top: -5px;
+}
+#sign-in {
+    margin-top: -10px;
+}
+#search {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+
 
 
 
@@ -69,4 +77,18 @@ border-right: none;
 #more:hover, #more:focus {
     border-bottom: 3px solid #ffffff;
     padding-bottom: 13px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    color: black;
+
+}
+p.welcome {
+margin: 50px 0 0 px;
+}
+p.date {
+    float: right;
+    margin-top: -35px;
 }
